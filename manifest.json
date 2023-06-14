@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Mostrar enlaces",
+  "version": "1.0",
+  "permissions": ["activeTab"],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://hdpastes.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
