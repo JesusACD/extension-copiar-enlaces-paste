@@ -91,10 +91,10 @@ function mostrarHrefEtiquetasConInnerText(texto) {
     );
   }
 
-  // Actualizar el valor del textarea
+  // Actualizar el valor del textarea con enumeración
   textareaElemento.value = hrefEtiquetas
-    .map(function (link) {
-      return link;
+    .map(function (link, index) {
+      return index + 1 + ". " + link;
     })
     .join("\n");
 }
